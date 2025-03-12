@@ -1,6 +1,4 @@
-* {
-  scroll-behavior: smooth;
-}
+
 
 body {
     box-sizing: border-box;
@@ -11,6 +9,10 @@ body {
     font-size: 13px;
     padding-bottom: 10px;
     overflow-x: hidden;
+    }
+    
+    * {
+      scroll-behavior: smooth;
     }
     
     .first-div {
@@ -432,4 +434,4 @@ body {
     #button3 {
       margin-top: 33px;
     }
-  }
+}
