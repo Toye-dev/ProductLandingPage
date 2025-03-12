@@ -1,0 +1,430 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255, .8);
+    margin: 0;
+    color: rgb(255, 255, 255, .8);
+    font-family: Oswald;
+    font-size: 13px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+    }
+    
+    .first-div {
+    background-color:rgb(14, 13, 12);
+    height: auto;
+    }
+    
+    .second-div {
+      background-image: url('./my-image.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+    
+    
+    main {
+    padding-top: 100px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto 1fr; 
+    }
+    
+    h1 {
+    font-family: Playfair Display;
+    font-size: 28px;
+    font-weight:100;
+    text-align: center; 
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    }
+    
+    #form-area {
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    }
+    
+    input[type=submit] {
+    background-color: #8C6366;
+    color: rgb(14, 13, 12);
+    display: block;
+    margin: 0  auto;
+    margin-top: 15px;
+    border-radius: 2px;
+    border: 1px solid #C7C7C7;
+    font-family: Oswald;
+    width: 90px;
+    height: 28px;
+    }
+    
+    input[type=submit]:hover {
+    border: 2px solid rgba(120, 120, 120, 0.9);
+    background-color: hsl(356, 17%, 27%);
+    }
+    
+    input[type=email] {
+    width: 270px;
+    height: 23px;
+    padding: 5px;
+    background-color: #0E0D0C;
+    box-shadow: none;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+    color: #C7C7C7;
+    text-align: center;
+    }
+    
+    input[type=email]:focus {
+      border: 3px solid #8C6366;
+    }
+    
+    #features {
+    padding-top:50px;
+    justify-self: center;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    }
+    
+    
+    h2 {
+    margin-bottom: -15px;
+    padding-left: 30px;
+    font-weight:800;
+    font-size: 20px;
+    }
+    
+    p {
+    padding-left: 30px;
+    font-size: 17px;
+    padding-bottom: 40px;
+    line-height: 20px;
+    }
+    
+    .frame {
+    padding-top: 45px;
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    text-align: center;
+    }
+    
+    iframe {
+    display: inline-block;
+    border: none;
+    }
+    
+    #pricing {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    }
+    
+    .first-box {
+      min-height: 380px;
+      min-width: 280px;
+      position: relative;
+     overflow: hidden;
+    }
+    
+    .second-box {
+      min-height: 380px;
+      min-width: 280px;
+      margin-right: 20px;
+      margin-left: 20px;
+      position: relative;
+      overflow: hidden;
+      }
+    
+    .third-box {
+      min-height: 380px;
+      min-width: 280px;
+      position: relative;
+      overflow: hidden;
+     }
+    
+     .border {
+       border: 2px solid grey;
+       height: 370px;
+       width: 270px;
+       margin-left: 4px;
+       margin-top: 4px;
+       border-radius: 3px;
+      }
+    
+     h3 {
+       font-family: playfair display;
+       text-align: center;
+       font-weight: 600;
+       font-size: 20px;
+       color:  #0E0D0C;
+      }
+    
+     .border > p {
+      color: #0E0D0C;
+      padding-bottom: 0px;
+      padding-right: 30px;
+      text-align: center;  
+    }
+    
+    button {
+     width: 100px;
+     height:40px;
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     font-family: playfair display; 
+     font-weight: bold;
+     font-size: 14px;
+     background-color: rgb(14, 13, 12, 0.9);
+     border: none;
+     color: rgb(255, 255, 255, .6);
+     border-radius: 2px;
+    }
+    
+    button:hover {
+      background-color: rgb(14, 13, 12, 0.8);
+       color: rgb(255, 255, 255);
+    }
+    
+    .button-wrapper {
+      width: 105px;
+      height: 42px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      border: 3px solid rgb(14, 13, 12, 0.5);
+      padding-top: 3px;
+      border-radius: 2px;
+    }
+    
+    #button2 {
+      margin-top: 69px;
+    }
+    
+    #button3 {
+      margin-top: -4px;
+    }
+    
+    .border > .hr1 {
+    width: 199px;
+    border-color: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 290px;
+    }
+    
+    .border > .hr2 {
+    width: 150px;
+    border-color: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 73px;
+    }
+    
+    .second-box > .border >p {
+      padding-top: 25px;
+    }
+    
+    .first-box, .second-box, .third-box { background-color: rgb(255, 255, 255, .8);     
+    border-radius: 3px;
+    }
+    
+    footer {
+    grid-row: 6;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-top:70px;
+    height: 70px;
+    background-color: rgb(14, 13, 12, 0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    footer ul{
+      padding-left: 260px;
+      list-style-type: none;
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    
+    #copyright {
+      font-size: 13px;
+       padding-left: 250px;
+      margin-top: -10px;
+      text-align: center;
+      color: rgb(255, 255, 255, .4);
+    }
+    
+    
+    #header {
+    position: fixed;
+    background-color: #0E0D0C;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90px;
+    z-index: 1000;
+    }
+    
+    #header-img {
+      top: 25px;
+      left: 10px;
+      width: 250px;
+      position: absolute;
+    }
+    
+    nav {
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    nav ul {
+      width: 30%;
+      height:80px;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items :center;
+      list-style-type: none;
+    }
+    
+    
+    
+    .hr {
+      position: absolute;
+      width: 100%; 
+      bottom:0;
+      margin-bottom: 2px;
+      border: 1px solid rgba(120, 120, 120, .5);
+    }
+    
+    @media (max-width: 768px) {
+      
+       #header {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         height: 160px;
+         }
+    
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        padding-right: 46px;
+        padding-top: 9px;
+        padding-bottom: 8px;
+        height: 200px;
+        width: 100vw;
+        z-index: 1000;
+      }
+    
+      nav > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .hr {
+      position: absolute;
+      width: 100vh; 
+      bottom: 80px;
+      margin-bottom: 2px;
+      border: 1px solid rgba(120, 120, 120, .5);
+      }
+    
+      main {
+    padding-top: 160px;
+    }
+    
+    h1 {
+    font-size: 24px;
+    }
+    
+    input[type=email] {
+    width: 230px;
+    height: 30px;
+    }
+    
+    p {
+    padding-left: 30px;
+    font-size: 16px;
+    padding-bottom: 12px;
+    line-height: 20px;
+    }
+    
+    #features {
+    padding-top: 25px;
+    }
+    
+    #pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    }
+    
+    .second-box {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .border > .hr1 {
+    width: 199px;
+    border-color: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 290px;
+    }
+    
+    .border > .hr2 {
+    width: 150px;
+    border-color: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 85px;
+    }
+    
+    button {
+     width: 100px;
+     height:40px;
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+    
+    }
+    
+    .button-wrapper {
+      width: 105px;
+      height: 43px;
+      }
+    
+     #button1 {
+      margin-top: 37px;
+    }
+    
+    #button3 {
+      margin-top: 33px;
+    }
